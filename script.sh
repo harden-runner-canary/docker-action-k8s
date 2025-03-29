@@ -5,8 +5,10 @@ env
 
 DOMAINS="google.com youtube.com facebook.com"
 
-count=0
+echo "sleep for ${SLEEPINSECONDS:-5} seconds"
+sleep ${SLEEPINSECONDS:-5}
 
+count=0
 for domain in $DOMAINS; do
     count=$((count + 1))
     echo "[${count}] Making request to ${domain}"
@@ -21,9 +23,9 @@ done
 
 echo "listing content with ls"
 ls
-# echo "hello" >~/helloworld1.txt
-# echo "hello" >~/helloworld2.txt
-# echo "listing content with ls"
+echo "hello" >~/helloworld1.txt
+echo "hello" >~/helloworld2.txt
+echo "listing content with ls"
 ls ~
 echo "sleep for ${SLEEPINSECONDS:-5} seconds"
 sleep ${SLEEPINSECONDS:-5}
