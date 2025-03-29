@@ -5,6 +5,9 @@ env
 
 DOMAINS="google.com youtube.com facebook.com"
 
+echo "sleep for ${SLEEPINSECONDS:-5} seconds"
+sleep ${SLEEPINSECONDS:-5}
+
 count=0
 for domain in $DOMAINS; do
     count=$((count + 1))
