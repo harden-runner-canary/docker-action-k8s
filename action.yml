@@ -1,0 +1,5 @@
+name: "docker action for arc k8s-mode"
+description: "to test arc k8s-mode"
+runs:
+  using: "docker"
+  image: "docker://harden-runner-canary/docker-action-k8s:latest"
